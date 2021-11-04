@@ -1,9 +1,9 @@
 # Setup
 title: Yu
 tagline: null
-url: https://yuuu14.github.io/blog
+url: "https://yuuu14.github.io"
 paginate: 1
-baseurl: ""
+baseurl: "/blog/"
 permalink: pretty
 
 # Gems
