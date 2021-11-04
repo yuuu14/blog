@@ -1,9 +1,9 @@
 # Setup
-title: Poole
-tagline: The Jekyll Butler
-url: https://getpoole.com
+title: Yu
+tagline: null
+url: https://yuuu14.github.io
 paginate: 1
-baseurl: ""
+baseurl: "/blog"
 permalink: pretty
 
 # Gems
@@ -33,9 +33,9 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Mark Otto
-  url: https://twitter.com/mdo
-  email: markdotto@gmail.com
+  name: yuuu14
+  url: https://yuuu14.github.io
+  email: yu.xiao.14@outlook.com
 
 # Custom vars
 version: 3.0.0
