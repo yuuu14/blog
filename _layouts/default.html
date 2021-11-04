@@ -12,7 +12,7 @@
           <small>{{ site.tagline }}</small>
 	  {% for opt in site.bar %}
 	    &nbsp;&nbsp;&nbsp;
-	    <small><a href="{{ opt[1] }}">{{ opt[0] }}</a></small>
+	    <small><a href="{{ site.baseurl }}{{ opt[1] }}">{{ opt[0] }}</a></small>
 	  {% endfor %}
         </h3>
       </header>
