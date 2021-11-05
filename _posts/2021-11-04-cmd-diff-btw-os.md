@@ -14,5 +14,6 @@ Each command I will list few common parameters.
 | ---- | ---- | ---- |
 | dir /a /b  | ls -a -l -sh | get dir list |
 | cd /d | cd | change dir 
+| start | xdg-open | open file with designated application |
 
 
