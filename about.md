@@ -4,7 +4,8 @@ title: About
 ---
 
 <p class="message">
-  Hey there
+  Hello<br>
+  <code>python, js, cpp</code>
 </p>
 
 Thanks for reading!
