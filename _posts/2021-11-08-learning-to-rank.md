@@ -28,10 +28,11 @@ $|\text{REL}|$: sort by relevance in corpus descendingly, choose top-p results.
 Problem: given query $q$, compare relevance between $doc\_i$ $doc\_j$  
 Denote $s = f(x;w)$ a scoring function, $x$ is the feature of $doc$, $w$ weight.
 Then we have $s\_i = f(x\_i;w)$, $s\_j = f(x\_j;w)$  
-Next, define  
-$\begin{center}
-	test
-\end{center}$
+Next, define prob that $d\_i$ more relevant than $d\_j$   
+$\qquad\mathbf{P}(d\_i > d\_j) = \frac{1}{1 + e^{-\sigma (s\_i-s\_j)}} \rightarrow $ to train $\sigma$  
+True prob - $\overline{\mathbf{P}}\_{ij} = \frac{1+S\_{ij}}{2}$, $S\_{ij} = {1, -1, 0}$  
+Loss $\rightarrow$ choose Cross Entropy loss: 
+$C = \mathbf{\overline P}\_{ij}\log \mathbf{P}\_{ij} - (1-\mathbf{\overline P\_{ij}})\log (1-\mathbf{P}\_{ij}))$
 
 # Reference
 [1] https://www.6aiq.com/article/1593872372312
