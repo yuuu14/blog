@@ -35,6 +35,7 @@ Loss $\rightarrow$ choose Cross Entropy loss:
 $C = \mathbf{\overline P}\_{ij}\log \mathbf{P}\_{ij} - (1-\mathbf{\overline P\_{ij}})\log (1-\mathbf{P}\_{ij}))$
 
 # Reference
-[1] https://www.6aiq.com/article/1593872372312
-[2] https://www.cnblogs.com/bentuwuying/p/6690836.html
+[1] https://www.6aiq.com/article/1593872372312  
+[2] Learning to Rank算法介绍：RankNet，LambdaRank，LambdaMart,
+[https://www.cnblogs.com/bentuwuying/p/6690836.html](https://www.cnblogs.com/bentuwuying/p/6690836.html)  
 [3] https://tech.meituan.com/2020/07/09/bert-in-meituan-search.html
