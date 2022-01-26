@@ -18,3 +18,18 @@ Each command I will list few common parameters.
 | - | wc -l | word count --line |
 | - | mkdir -p | create dir recursively
 
+
+
+## useful commands explained 
+- git checkout
+- alias & unalias: temporarily rename shortcut  
+  permanently use `.bash_aliases`
+- type cmd
+- which cmd
+- d(is)u(sage) -h(uman)c(ount) dir | sort -r(everse)h(uman) | head  
+  check size of dir
+
+
+## vscode settings
+- break long lines  
+  Set `editor.wordWrap`: on
