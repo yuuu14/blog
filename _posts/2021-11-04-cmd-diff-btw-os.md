@@ -28,7 +28,14 @@ Each command I will list few common parameters.
 - which cmd
 - d(is)u(sage) -h(uman)c(ount) dir | sort -r(everse)h(uman) | head  
   check size of dir
-
+- nmcli  
+  NetworkManager  
+  `nmcli connection show --active`
+- lspci  
+  display devices and drivers
+- nvidia-smi
+  NVIDIA System Management Interface  
+  
 
 ## vscode settings
 - break long lines  
