@@ -21,7 +21,6 @@ Each command I will list few common parameters.
 
 
 ## useful commands explained 
-- git checkout
 - alias & unalias: temporarily rename shortcut  
   permanently use `.bash_aliases`
 - type cmd
@@ -35,7 +34,13 @@ Each command I will list few common parameters.
   display devices and drivers
 - nvidia-smi
   NVIDIA System Management Interface  
-  
+- nvcc  
+  Nvidia CUDA Compiler  
+- lshw  
+  list hardware, run with `sudo`  
+- free  
+  display amount of free and used memory in the system
+
 
 ## vscode settings
 - break long lines  
