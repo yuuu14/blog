@@ -40,6 +40,13 @@ Each command I will list few common parameters.
   list hardware, run with `sudo`  
 - free  
   display amount of free and used memory in the system
+- awk  
+  pattern scanning and processing  
+  '{print}'    scan each line  
+  '{print $1}'    the first parameter, $0 for whole line  
+- xxd  
+  hexdump or reverse  
+- df -h
 
 
 ## vscode settings
