@@ -34,9 +34,7 @@ kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     css_class: "highlight"
-    style: "colorful"
-    inline_theme: "github"
-  
+    style: "colorful"  
 
   # syntax_highlighter: coderay
   # coderay-linenums-mode: inline
