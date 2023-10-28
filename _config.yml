@@ -31,7 +31,7 @@ sass:
 markdown: kramdown
 kramdown:
   math_engine: mathjax
-  syntax_highlighter: coderay
+  syntax_highlighter: rouge
   coderay-linenums-mode: inline
   syntax_highlighter_opts:
     line_numbers:
