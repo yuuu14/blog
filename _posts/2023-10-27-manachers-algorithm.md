@@ -6,6 +6,11 @@ tags: string
 mathjax: true
 ---
 
+$\colorbox{yellow}{a}$
+
+$\color{red}{x}$
+
+
 Manacher proposed an algorithm for finding all "inital leftmost"[1] palidromes with $O(n)$ time complexity. With modification it could be applied to substrings started anywhere. The main idea is to use the symmetric property of palidrome. For palindrome $p$, if there exists a palindrome $q$ before its center, then there must be an exactly same palindrome $s = q$ after the center, e.g., $p$ is the longest palindrome at the beginning of certain string, 
 $p = \textcolor{red}{\texttt{b.a.b}}\texttt{.}\textcolor{yellow}{\texttt{c}}\texttt{.}\textcolor{green}{\texttt{b.a.b}}$, and before the center $\textcolor{yellow}{\texttt{c}}$, there is a palindrome $q = \textcolor{red}{\texttt{b.a.b}}$, symmetrically, after $\textcolor{yellow}{\texttt{c}}$, there is another palindrome $s = \textcolor{green}{\texttt{b.a.b}}$. 
 
