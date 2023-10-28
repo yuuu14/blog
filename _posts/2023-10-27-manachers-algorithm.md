@@ -13,7 +13,7 @@ $p = \color{red}{\texttt{b.a.b}}\texttt{.}\color{yellow}{\texttt{c}}\texttt{.}\c
 Notice the dot added between chars. Since the length of $p$ is odd, so the center is a char, if it is even, then it would be impractical to represent the center. Adding separators solves this problem, the center for palindrome with even length becomes the separator. And to identify the location of a palindrome, knowing its center and radius (length from the center to each end) would be sufficient. For $p$, its center is $\color{yellow}{\texttt{c}}$, its radius is 3, (for simplicity here ignore the separators).
 
 Considering more general cases. If $p$ is not at the beginning of a string, assume there is a $\color{orange}{\texttt{c}}$ before $p$, the beginning of this new string becomes
-$\color{orange}{\texttt{c}}\texttt{.}\color{red}{\texttt{b}}\texttt{.}\color{orange}{\texttt{a}}\texttt{.}\color{red}{\texttt{b}}\texttt{.}\color{yellow}{\texttt{c}}\texttt{.}\color{green}{\texttt{b.a.b}}$. Notice that $q$ could be extended to $q_1 = \color{orange}{\texttt{c.b.a.b.c}}$, with center $\color{orange}{\texttt{a}}$ and radius = 2. How can we decide the radius for the $\color{green}{\texttt{b}}$ now? Since $q_1$ is clearly not the substring of $p$, the radius of $\color{green}{\texttt{b}}$ would be equal to the distance from itself to the right side of $p$, if it is not the radius for $\color{green}{\texttt{b}}$, considering $q_1$ exceeds the left bound of $p$, then $p$ could be extended too, which is against its radius being 3.
+$\color{orange}{\texttt{c}}\texttt{.}\color{red}{\texttt{b}}\texttt{.}\color{orange}{\texttt{a}}\texttt{.}\color{red}{\texttt{b}}\texttt{.}\color{yellow}{\texttt{c}}\texttt{.}\color{green}{\texttt{b.a.b}}$. Notice that $q$ could be extended to $q_1 = \color{orange}{\texttt{c.b.a.b.c}}$, with center $\color{orange}{\texttt{a}}$ and radius = 2. How can we decide the radius for the $\color{green}{\texttt{a}}$ now? Since $q_1$ is clearly not the substring of $p$, the radius of $\color{green}{\texttt{a}}$ would be equal to the distance from itself to the right side of $p$, if it is not the radius for $\color{green}{\texttt{a}}$, considering $q_1$ exceeds the left bound of $p$, then $p$ could be extended too, which is against its radius being 3.
 
 Now, if $q$ is the substring of $p$ and it is already the longest palindrome with this center, what would happen? If it is within the bound (exclusively), then $s$ would have the same radius with $q$. If it shares the left bound with $p$, then it is unclear whether $s$ could be extended furthermore, we can start with current radius (same of $q$) and increase it without violating the requirement of being palindrome.
 
@@ -21,7 +21,7 @@ Now, if $q$ is the substring of $p$ and it is already the longest palindrome wit
 # Algorithm
 Python implementation for pseudocode[2]. 
 ```python
-def longestPalindrome(self, s: str) -> str:
+def longestPalindrome(s: str) -> str:
     s1 = f"|{'|'.join(s)}|"
     n = len(s1)
     longest_radius = [0] * n
