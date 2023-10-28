@@ -33,10 +33,6 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
   syntax_highlighter_opts:
-    # inline instead of block
-    block: false
-    # use span instead of div
-    span: true
     css-class: "highlight"
     inline_theme: "github"
   
