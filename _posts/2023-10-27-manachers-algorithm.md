@@ -2,7 +2,7 @@
 layout: post
 title: Manacher's Algorithm
 date: 2023-10-27 23:36 +0200
-tags: string, coding
+tags: string coding
 use_math: true
 ---
 
