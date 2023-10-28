@@ -18,7 +18,7 @@ $\color{orange}{\texttt{c}}\texttt{.}\color{red}{\texttt{b}}\texttt{.}\color{ora
 Now, if $q$ is the substring of $p$ and it is already the longest palindrome with this center, what would happen? If it is within the bound (exclusively), then $s$ would have the same radius with $q$. If it shares the left bound with $p$, then it is unclear whether $s$ could be extended furthermore, we can start with current radius (same of $q$) and increase it without violating the requirement of being palindrome.
 
 
-# Algorithm
+## Algorithm
 Python implementation for pseudocode[2]. 
 ```python
 def longestPalindrome(s: str) -> str:
@@ -59,7 +59,6 @@ def longestPalindrome(s: str) -> str:
 ```
 
 
-
-# Reference
+## Reference
 [1] Manacher, *A New Linear-Time "On-Line" Algorithm for Finding the Smallest Initial Palindrome of a String*  
 [2] https://en.wikipedia.org/wiki/Longest_palindromic_substring#Manacher's_algorithm
