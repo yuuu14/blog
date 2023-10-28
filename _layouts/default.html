@@ -14,10 +14,10 @@
 	    &nbsp;&nbsp;&nbsp;
 	    <small><a href="{{ site.baseurl }}{{ opt[1] }}">{{ opt[0] }}</a></small>
 	  {% endfor %}
+    {% if page.use_math %}
+    {% include mathjax_support.html %}
+    {% endif %}
         </h3>
-        <script type="text/javascript" id="MathJax-script" async
-          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-        </script>
       </header>
 
       <main>
