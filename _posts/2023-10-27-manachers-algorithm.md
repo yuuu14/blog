@@ -3,10 +3,11 @@ layout: post
 title: Manacher's Algorithm
 date: 2023-10-27 23:36 +0200
 tags: string
+mathjax: true
 ---
 
 Manacher proposed an algorithm for finding all "inital leftmost"[1] palidromes with $O(n)$ time complexity. With modification it could be applied to substrings started anywhere. The main idea is to use the symmetric property of palidrome. For palindrome $p$, if there exists a palindrome $q$ before its center, then there must be an exactly same palindrome $s = q$ after the center, e.g., $p$ is the longest palindrome at the beginning of certain string, 
-$p = \textcolor{red}{\texttt{b.a.b}}\texttt{.}\textcolor{yellow}{\texttt{c}}\texttt{.}\textcolor{green}{\texttt{b.a.b}}$, and before the center $\textcolor{yellow}{\texttt{c}}$, there is a palindrome $q = \textcolor{red}{\texttt{b.a.b}}$, symmetrically, after $\textcolor{yellow}{\texttt{c}}$, there is another palindrome $s = \textcolor{green}{\texttt{b.a.b}}$. 
+$$p = \textcolor{red}{\texttt{b.a.b}}\texttt{.}\textcolor{yellow}{\texttt{c}}\texttt{.}\textcolor{green}{\texttt{b.a.b}}$, and before the center $\textcolor{yellow}{\texttt{c}}$, there is a palindrome $q = \textcolor{red}{\texttt{b.a.b}}$, symmetrically, after $\textcolor{yellow}{\texttt{c}}$, there is another palindrome $s = \textcolor{green}{\texttt{b.a.b}}$. 
 
 Notice the dot added between chars. Since the length of $p$ is odd, so the center is a char, if it is even, then it would be impractical to represent the center. Adding separators solves this problem, the center for palindrome with even length becomes the separator. And to identify the location of a palindrome, knowing its center and radius (length from the center to each end) would be sufficient. For $p$, its center is $\textcolor{yellow}{\texttt{c}}$, its radius is 3, (for simplicity here ignore the separators).
 
