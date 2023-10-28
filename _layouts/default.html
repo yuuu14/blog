@@ -14,11 +14,14 @@
 	    &nbsp;&nbsp;&nbsp;
 	    <small><a href="{{ site.baseurl }}{{ opt[1] }}">{{ opt[0] }}</a></small>
 	  {% endfor %}
-        </h3>>
-    {% if page.use_math %}
-    {% include mathjax_support.html %}
-    {% endif %}
+        </h3>>    
       </header>
+
+    <header>
+      {% if page.use_math %}
+      {% include mathjax_support.html %}
+      {% endif %}
+    </header>>
 
       <main>
         {{ content }}
