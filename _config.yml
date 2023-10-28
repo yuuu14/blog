@@ -32,10 +32,20 @@ markdown: kramdown
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
-  coderay-linenums-mode: inline
   syntax_highlighter_opts:
-    line_numbers:
-    coderay_css: class
+    # inline instead of block
+    block: false
+    # use span instead of div
+    span: true
+    css-class: "highlight"
+    inline_theme: "github"
+  
+
+  # syntax_highlighter: coderay
+  # coderay-linenums-mode: inline
+  # syntax_highlighter_opts:
+  #   line_numbers:
+  #   coderay_css: class
 
 # Options
 
