@@ -38,5 +38,3 @@ gem "jekyll-gist", "~> 1.5"
 gem "jekyll-paginate", "~> 1.1"
 
 gem "jekyll-paginate-v2", "~> 3.0"
-
-gem 'rouge', '~> 4.1', '>= 4.1.3'
