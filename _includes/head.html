@@ -26,12 +26,15 @@
     tex2jax: {
       skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
       inlineMath: [['$','$']]
+    },
+    Tex: {
+      extensions: ['xcolor.js']
     }
   });
   </script>
   <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   <!-- for mathjax support -->    
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function(){
       function stripcdata(x) {
         if (x.startsWith('% <![CDATA[') && x.endsWith('%]]>'))
@@ -48,7 +51,7 @@
       script.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js";
       document.head.appendChild(script);
     }, false);
-    </script>
+    </script> -->
 
 
 </head>
