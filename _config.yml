@@ -32,8 +32,10 @@ markdown: kramdown
 kramdown:
   math_engine: mathjax
   syntax_highlighter: coderay
+  coderay-linenums-mode: inline
   syntax_highlighter_opts:
     line_numbers: nil
+    coderay_css: class
 
 # Options
 
