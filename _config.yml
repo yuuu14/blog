@@ -31,11 +31,15 @@ sass:
 markdown: kramdown
 kramdown:
   math_engine: mathjax
-  syntax_highlighter: coderay
-  coderay-linenums-mode: inline
-  syntax_highlighter_opts:
-    line_numbers: nil
+  use_coderay: true
+  coderay:
+    coderay_line_numbers:
     coderay_css: class
+  # syntax_highlighter: coderay
+  # coderay-linenums-mode: inline
+  # syntax_highlighter_opts:
+  #   line_numbers: nil
+  #   coderay_css: class
 
 # Options
 
