@@ -59,6 +59,6 @@ def longestPalindrome(s: str) -> str:
 ```
 
 
-## Reference
+## References
 [1] Manacher, *A New Linear-Time "On-Line" Algorithm for Finding the Smallest Initial Palindrome of a String*  
 [2] https://en.wikipedia.org/wiki/Longest_palindromic_substring#Manacher's_algorithm
