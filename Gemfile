@@ -33,6 +33,8 @@ gem "webrick", "~> 1.8"
 
 gem "kramdown", "~> 2.3"
 
-gem 'jekyll-gist', '~> 1.5'
+gem "jekyll-gist", "~> 1.5"
 
-gem 'jekyll-paginate-v2', '~> 3.0'
+gem "jekyll-paginate", "~> 1.1"
+
+gem "jekyll-paginate-v2", "~> 3.0"
