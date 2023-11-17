@@ -5,9 +5,9 @@ date: 2023-11-16 13:57 +0100
 ---
 
 
-I thought running ubuntu under VM with 16GB RAM PC should be practical, it turns out I am totally wrong. I have installed Ubuntu along with default OS before at least twice, just want to record this time, in case in the future I have to do it again.
+I thought running ubuntu under VM with 16GB RAM PC should be easy to run smoothly, it turns out I am totally wrong. I have installed Ubuntu along with default OS before at least twice, just want to take notes this time, in case in the future I have to do it again.
 
-Since I have one 1TB SSD as `D:\` drive on my PC, and this time I want to assign much sufficient disk space for the second OS, I shrinked about 300 GB. To create a bootable drive from the `.iso` file, I always use `rufus`[1]. 
+Since I have one 1TB SSD as `D:\` drive on my PC, and this time I want to assign much sufficient disk space for the second OS, I shrinked about 300 GB. To create a bootable drive from the `.iso` file, I always use `rufus` [1]. 
 - Use *GPT* partition scheme [2]
 
 So the only trick part is how to install the second OS without damaging the original bootloader, and the manual partition part.
