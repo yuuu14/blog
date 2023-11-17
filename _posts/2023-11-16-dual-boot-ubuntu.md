@@ -13,10 +13,10 @@ Since I have one 1TB SSD as `D:\` drive on my PC, and this time I want to assign
 So the only trick part is how to install the second OS without damaging the original bootloader, and the manual partition part.
 
 - swap: skip it, with larger RAM, swap partition becomes optional
-- `/`: 20GB
 - `/boot`: 1000MB, use it as a fail-safe [3]
 - `/home`: skip [4] [5]
 - EFI System Partition: 500MB
+- `/`: the rest of free space
 
 set `grub` [6]
 
