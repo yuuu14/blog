@@ -20,6 +20,7 @@ So the only trick part is how to install the second OS without damaging the orig
 
 set `grub` [6]
 
+install Edge on Ubuntu [7]
 
 ## References
 [1] https://rufus.ie/ <br>
@@ -27,4 +28,5 @@ set `grub` [6]
 [3] https://www.baeldung.com/linux/boot-partition-necessary <br>
 [4] https://askubuntu.com/questions/269880/re-install-ubuntu-without-losing-data-in-home-folder <br>
 [5] https://askubuntu.com/questions/21719/how-large-should-i-make-root-home-and-swap-partitions <br>
-[6] https://askubuntu.com/questions/52963/how-do-i-set-windows-to-boot-as-the-default-in-the-boot-loader
+[6] https://askubuntu.com/questions/52963/how-do-i-set-windows-to-boot-as-the-default-in-the-boot-loader <br>
+[7] https://askubuntu.com/questions/1454325/unable-to-install-edge-on-ubuntu-22-04
