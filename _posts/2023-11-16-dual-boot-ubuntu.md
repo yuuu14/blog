@@ -18,6 +18,8 @@ So the only trick part is how to install the second OS without damaging the orig
 - `/home`: skip [4] [5]
 - EFI System Partition: 500MB
 
+set `grub` [6]
+
 
 ## References
 [1] https://rufus.ie/ <br>
@@ -25,3 +27,4 @@ So the only trick part is how to install the second OS without damaging the orig
 [3] https://www.baeldung.com/linux/boot-partition-necessary <br>
 [4] https://askubuntu.com/questions/269880/re-install-ubuntu-without-losing-data-in-home-folder <br>
 [5] https://askubuntu.com/questions/21719/how-large-should-i-make-root-home-and-swap-partitions <br>
+[6] https://askubuntu.com/questions/52963/how-do-i-set-windows-to-boot-as-the-default-in-the-boot-loader
