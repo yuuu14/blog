@@ -18,7 +18,14 @@ So the only trick part is how to install the second OS without damaging the orig
 - EFI System Partition: 500MB
 - `/`: the rest of free space
 
-set `grub` [6]
+set `grub` [6] [7] [8]
+
+```bash
+GRUB_DEFAULT=saved
+GRUB_SAVEDEFAULT=true
+GRUB_TIMEOUT=5
+
+```
 
 install Edge on Ubuntu [7]
 ```bash
@@ -35,4 +42,5 @@ sudo apt install ./microsoft-edge-stable_110.0.1587.41-1_amd64.deb
 [4] https://askubuntu.com/questions/269880/re-install-ubuntu-without-losing-data-in-home-folder <br>
 [5] https://askubuntu.com/questions/21719/how-large-should-i-make-root-home-and-swap-partitions <br>
 [6] https://askubuntu.com/questions/52963/how-do-i-set-windows-to-boot-as-the-default-in-the-boot-loader <br>
-[7] https://askubuntu.com/questions/1454325/unable-to-install-edge-on-ubuntu-22-04
+[7] https://askubuntu.com/questions/1454325/unable-to-install-edge-on-ubuntu-22-04 <br>
+[8] https://www.baeldung.com/linux/grub-menu-remove-timeout
