@@ -16,8 +16,21 @@ So the only trick part is how to install the second OS without damaging the orig
 - `/`: 20GB
 - `/boot`: 1000MB, use it as a fail-safe [3]
 - `/home`: skip [4] [5]
-- EFI System Partition: 500MB
+- EFI System Partition: 500MB (Try to override EIF partition: [6])
 
+
+**Error with time on Windows** 
+
+Maintain Ubuntu's Real Time Clock locally.
+
+```bash
+timedatectl set-local-rtc 1 --adjust-system-clock
+timedatectl  # check whether change has been made
+```
+Or let Windows use Universal Time Clock
+```cmd
+Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_QWORD /d 1
+```
 
 ## References
 [1] https://rufus.ie/ <br>
@@ -25,3 +38,5 @@ So the only trick part is how to install the second OS without damaging the orig
 [3] https://www.baeldung.com/linux/boot-partition-necessary <br>
 [4] https://askubuntu.com/questions/269880/re-install-ubuntu-without-losing-data-in-home-folder <br>
 [5] https://askubuntu.com/questions/21719/how-large-should-i-make-root-home-and-swap-partitions <br>
+[6] https://www.tomshardware.com/how-to/delete-efi-system-partition-windows <br>
+[7] [How to Fix Time Differences in Ubuntu 16.04 & Windows 10 Dual Boot](https://ubuntuhandbook.org/index.php/2016/05/time-differences-ubuntu-1604-windows-10/) 
