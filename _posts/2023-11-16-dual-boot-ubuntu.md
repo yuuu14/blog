@@ -15,34 +15,25 @@ So the only trick part is how to install the second OS without damaging the orig
 - swap: skip it, with larger RAM, swap partition becomes optional
 - `/boot`: 1000MB, use it as a fail-safe [3]
 - `/home`: skip [4] [5]
-<<<<<<< HEAD
-- EFI System Partition: 500MB (Try to override EIF partition: [6])
-=======
-- EFI System Partition: 500MB
+- EFI System Partition: 500MB (how to delelte EFI partition: [9])
 - `/`: the rest of free space
 
-set `grub` [6] [7] [8]
-
+Set `grub` [6] [7] [8]
 ```bash
 GRUB_DEFAULT=saved
 GRUB_SAVEDEFAULT=true
 GRUB_TIMEOUT=5
-
 ```
 
-install Edge on Ubuntu [7]
+Install Edge on Ubuntu [7]
 ```bash
 cd ~/Downloads
 wget https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_110.0.1587.41-1_amd64.deb?brand=M102
 sudo apt install ./microsoft-edge-stable_110.0.1587.41-1_amd64.deb
 ```
->>>>>>> refs/remotes/origin/gh-pages
 
-
-**Error with time on Windows** 
-
-Maintain Ubuntu's Real Time Clock locally.
-
+**Error with time on Windows**  
+Maintain Ubuntu's Real Time Clock locally. [10]
 ```bash
 timedatectl set-local-rtc 1 --adjust-system-clock
 timedatectl  # check whether change has been made
@@ -58,11 +49,8 @@ Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsU
 [3] https://www.baeldung.com/linux/boot-partition-necessary <br>
 [4] https://askubuntu.com/questions/269880/re-install-ubuntu-without-losing-data-in-home-folder <br>
 [5] https://askubuntu.com/questions/21719/how-large-should-i-make-root-home-and-swap-partitions <br>
-<<<<<<< HEAD
-[6] https://www.tomshardware.com/how-to/delete-efi-system-partition-windows <br>
-[7] [How to Fix Time Differences in Ubuntu 16.04 & Windows 10 Dual Boot](https://ubuntuhandbook.org/index.php/2016/05/time-differences-ubuntu-1604-windows-10/) 
-=======
 [6] https://askubuntu.com/questions/52963/how-do-i-set-windows-to-boot-as-the-default-in-the-boot-loader <br>
 [7] https://askubuntu.com/questions/1454325/unable-to-install-edge-on-ubuntu-22-04 <br>
-[8] https://www.baeldung.com/linux/grub-menu-remove-timeout
->>>>>>> refs/remotes/origin/gh-pages
+[8] https://www.baeldung.com/linux/grub-menu-remove-timeout <br>
+[9] https://www.tomshardware.com/how-to/delete-efi-system-partition-windows <br>
+[10] [How to Fix Time Differences in Ubuntu 16.04 & Windows 10 Dual Boot](https://ubuntuhandbook.org/index.php/2016/05/time-differences-ubuntu-1604-windows-10/) 
