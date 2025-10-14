@@ -34,7 +34,7 @@ gem "webrick", "~> 1.8"
 
 gem "kramdown", "~> 2.3"
 
-gem "jekyll-gist", "~> 1.5"
+# gem "jekyll-gist", "~> 1.5"  # Temporarily disabled due to Ruby 3.4.0+ compatibility issues
 
 gem "jekyll-paginate", "~> 1.1"
 
@@ -48,5 +48,14 @@ gem "kramdown-syntax-coderay", "~> 1.0"
 
 # Add csv gem for Ruby 3.4.0+ compatibility
 gem "csv", "~> 3.2"
+
+# Add base64 gem for Ruby 3.4.0+ compatibility
+gem "base64", "~> 0.2"
+
+# Add bigdecimal gem for Ruby 3.4.0+ compatibility
+gem "bigdecimal", "~> 3.1"
+
+# Add timeout gem for Ruby 3.4.0+ compatibility
+gem "timeout", "~> 0.4"
 
 # gem "eventmachine", "~> 1.2"

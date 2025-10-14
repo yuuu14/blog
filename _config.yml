@@ -9,7 +9,7 @@ related_posts: ""
 
 # Gems
 plugins:
-  - jekyll-gist
+  # - jekyll-gist  # Temporarily disabled due to Ruby 3.4.0+ compatibility issues
   - jekyll-paginate
   - jekyll-seo-tag
 
