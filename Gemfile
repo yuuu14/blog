@@ -20,13 +20,13 @@ end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
-platforms :mingw, :x64_mingw, :mswin, :jruby do
+platforms :windows, :jruby do
   gem "tzinfo", "~> 1.2"
   gem "tzinfo-data"
 end
 
 # Performance-booster for watching directories on Windows
-gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
+gem "wdm", "~> 0.1.1", :platforms => [:windows]
 
 gem 'em-websocket', '~> 0.5.2'
 
@@ -45,5 +45,8 @@ gem "jekyll-compose", "~> 0.12.0"
 gem "coderay", "~> 1.1"
 
 gem "kramdown-syntax-coderay", "~> 1.0"
+
+# Add csv gem for Ruby 3.4.0+ compatibility
+gem "csv", "~> 3.2"
 
 # gem "eventmachine", "~> 1.2"
