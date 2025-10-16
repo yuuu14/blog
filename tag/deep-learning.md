@@ -1,5 +1,5 @@
 ---
 layout: tag
-title: "Tag: deep learning"
+title: "Tag: Deep Learning"
 tag: deep-learning
 ---

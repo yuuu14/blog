@@ -1,5 +1,5 @@
 ---
 layout: tag
-title: "Tag: string algorithm"
+title: "Tag: String Algorithm"
 tag: string
 ---

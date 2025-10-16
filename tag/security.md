@@ -1,5 +1,5 @@
 ---
 layout: tag
-title: "Tag: security"
+title: "Tag: Security"
 tag: security
 ---
