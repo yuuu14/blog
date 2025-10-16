@@ -1,7 +1,9 @@
 ---
 layout: post
-title: tagesschau-20251013
+title: Tagesschau 20 Uhr Transcript - 20251013
+tags: tagesschau
 ---
+
 
 Hier ist das Erste Deutsche Fernsehen mit der Tagesschau. Heute im Studio: Jens Riever. Guten Abend, ich begrüße Sie zur Tagesschau. Riesenjubel in Israel und pure Erleichterung. Die letzten 20 lebenden Geiseln der Hamas sind frei. Heute wurden sie aus dem Gaza-Streifen zu ihren Angehörigen gebracht, nach mehr als zwei Jahren in den Händen der Terroristen. 738 Tage hatte Israel auf diesen Tag gewartet. Die Freilassung der Geiseln ist ein wesentlicher Punkt des US-Friedensplans für Gaza. Dazu gehört auch, dass heute fast 2000 Palästinenser aus israelischer Haft freikamen. US-Präsident Trump war extra nach Israel gereist und wurde im Parlament gefeiert.
 
