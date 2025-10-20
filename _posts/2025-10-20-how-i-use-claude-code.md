@@ -28,7 +28,8 @@ project-name/
 │
 ├── src/                          # 核心功能（推荐使用具体名称，your_application）
 │   ├── __init__.py
-│   ├── __main__.py               
+│   ├── __main__.py
+│   ├── _config.py                # 项目配置文件
 │   ├── feature_a.py              # 功能 A
 │   ├── services/                 # 服务层 / API 接口实现
 │   │   └── api_b.py              # API B
@@ -108,4 +109,6 @@ MCP
 
 5 AI generated code review
 
+
+参考
 https://www.anthropic.com/engineering/claude-code-best-practices
